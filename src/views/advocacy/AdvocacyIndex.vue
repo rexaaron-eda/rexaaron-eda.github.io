@@ -30,10 +30,10 @@
 
 						<!-- Client Info Badge -->
 						<div class="ml-4 pl-4 border-l border-pink-200">
-							<div class="text-right">
+							<router-link to="/" class="text-right">
 								<p class="text-sm text-pink-700 font-medium">Rex Aaron Eda</p>
 								<p class="text-xs text-pink-500">Grade 12 STEM</p>
-							</div>
+							</router-link>
 						</div>
 					</div>
 
@@ -45,10 +45,10 @@
 				</div>
 
 				<div class="md:hidden mt-3 pt-3 border-t border-pink-100">
-					<div class="flex items-center justify-center space-x-2 text-sm">
+					<router-link to="/" class="flex items-center justify-center space-x-2 text-sm">
 						<span class="text-pink-600 font-medium">Rex Aaron Eda</span>
 						<span class="text-pink-500"> • Grade 12 STEM</span>
-					</div>
+					</router-link>
 				</div>
 
 				<!-- Mobile Navigation -->
@@ -384,40 +384,40 @@
 		</main>
 
 		<!-- Footer -->
-		<footer class="bg-pink-700 text-white mt-12">
+		<footer class="bg-gray-800 text-white mt-12">
 			<div class="container mx-auto px-4 py-8">
 				<div class="text-center mb-8">
 					<div class="flex items-center justify-center space-x-3 mb-4">
 						<i class="bx bx-heart-circle text-3xl text-pink-300"></i>
 						<div>
 							<h2 class="text-2xl font-bold">Heartbeat Harmony</h2>
-							<p class="text-pink-300">Small Actions, Big Changes</p>
+							<p class="text-gray-400">Small Actions, Big Changes</p>
 						</div>
 					</div>
 
-					<div class="bg-pink-800/50 rounded-lg p-4 inline-block mb-6">
+					<router-link to="/" class="bg-pink-800/50 rounded-lg p-4 inline-block mb-6">
 						<p class="font-medium">Project by <span class="font-bold">Rex Aaron Eda</span></p>
-						<p class="text-pink-300 text-sm">Grade 12 STEM Student</p>
-						<p class="text-pink-400 text-sm mt-1">Topic: Social Change Advocacy</p>
-					</div>
+						<p class="text-gray-400 text-sm">Grade 12 STEM Student</p>
+						<p class="text-gray-400 text-sm mt-1">Topic: Social Change Advocacy</p>
+					</router-link>
 				</div>
 
 				<div class="flex justify-center space-x-6 mb-6">
-					<a href="#" class="text-pink-300 hover:text-white">
+					<a href="#" class="text-gray-400 hover:text-white">
 						<i class="bx bxl-facebook text-2xl"></i>
 					</a>
-					<a href="#" class="text-pink-300 hover:text-white">
+					<a href="#" class="text-gray-400 hover:text-white">
 						<i class="bx bxl-twitter text-2xl"></i>
 					</a>
-					<a href="#" class="text-pink-300 hover:text-white">
+					<a href="#" class="text-gray-400 hover:text-white">
 						<i class="bx bxl-instagram text-2xl"></i>
 					</a>
-					<a href="#" class="text-pink-300 hover:text-white">
+					<a href="#" class="text-gray-400 hover:text-white">
 						<i class="bx bxl-youtube text-2xl"></i>
 					</a>
 				</div>
 
-				<div class="border-t border-pink-600 pt-6 text-center text-pink-300 text-sm">
+				<div class="border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
 					<p>© {{ currentYear }} Heartbeat Harmony. All rights reserved.</p>
 					<p class="mt-1">Made with <i class="bx bx-heart text-red-400"></i> for a better world</p>
 				</div>
