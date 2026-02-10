@@ -91,45 +91,101 @@
 			<section id="home" class="container mx-auto px-4 py-12">
 				<div class="bg-white rounded-3xl p-8 shadow-xl">
 					<div class="text-center mb-10">
-						<h2 class="text-3xl md:text-4xl font-bold text-pink-700 mb-4">Creating Positive Change Together</h2>
-						<p class="text-lg text-gray-600 mb-8">A social change advocacy platform dedicated to making the world
-						                                      better, one small action at a time.</p>
+						<!-- Tagline as main heading -->
+						<h2 class="text-3xl md:text-4xl font-bold text-pink-700 mb-4">Small Actions, Big Changes</h2>
 
-						<div class="flex flex-wrap justify-center gap-4">
-							<button @click="scrollToSection('about')"
-							        class="px-6 py-3 bg-pink-500 text-white font-semibold rounded-full hover:bg-pink-600 transition-colors">
-								Learn More
-							</button>
+						<!-- Subtitle explaining the tagline -->
+						<p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+							Every small action contributes to meaningful transformation. Together, we create ripples of positive
+							change.
+						</p>
+
+						<!-- Mission & Vision quick links -->
+						<div class="flex flex-wrap justify-center gap-4 mb-8">
 							<button @click="scrollToSection('mission')"
-							        class="px-6 py-3 bg-white border-2 border-pink-300 text-pink-700 font-semibold rounded-full hover:bg-pink-50 transition-colors">
+							        class="px-6 py-3 bg-pink-500 text-white font-semibold rounded-full hover:bg-pink-600 transition-colors flex items-center gap-2">
+								<i class="bx bx-bullseye"></i>
 								Our Mission
+							</button>
+							<button @click="scrollToSection('vision')"
+							        class="px-6 py-3 bg-white border-2 border-pink-300 text-pink-700 font-semibold rounded-full hover:bg-pink-50 transition-colors flex items-center gap-2">
+								<i class="bx bx-planet"></i>
+								Our Vision
+							</button>
+							<button @click="scrollToSection('about')"
+							        class="px-6 py-3 bg-pink-100 text-pink-700 font-semibold rounded-full hover:bg-pink-200 transition-colors flex items-center gap-2">
+								<i class="bx bx-info-circle"></i>
+								About Us
 							</button>
 						</div>
 					</div>
 
-					<div class="grid md:grid-cols-3 gap-8">
-						<div class="text-center p-6">
-							<div class="w-16 h-16 rounded-full bg-pink-100 flex items-center justify-center mx-auto mb-4">
-								<i class="bx bx-heart text-pink-600 text-2xl"></i>
+					<!-- Mission & Vision Preview Cards -->
+					<div class="grid md:grid-cols-2 gap-8 mb-10">
+						<!-- Mission Preview -->
+						<div class="bg-gradient-to-r from-pink-50 to-pink-100 rounded-2xl p-6">
+							<div class="flex items-center gap-3 mb-4">
+								<div class="w-12 h-12 rounded-full bg-pink-200 flex items-center justify-center">
+									<i class="bx bx-bullseye text-pink-600 text-xl"></i>
+								</div>
+								<h3 class="text-xl font-bold text-pink-700">Our Mission</h3>
 							</div>
-							<h3 class="text-xl font-bold text-pink-700 mb-2">Compassionate Action</h3>
-							<p class="text-gray-600">Leading with empathy in all our initiatives and interactions.</p>
+							<p class="text-gray-700 mb-4">
+								To empower individuals and communities to create lasting positive change through education, advocacy,
+								and collective action.
+							</p>
+							<button @click="scrollToSection('mission')"
+							        class="text-pink-600 font-medium hover:text-pink-700 transition-colors">
+								Learn more about our mission →
+							</button>
 						</div>
 
-						<div class="text-center p-6">
-							<div class="w-16 h-16 rounded-full bg-pink-200 flex items-center justify-center mx-auto mb-4">
-								<i class="bx bx-group text-pink-700 text-2xl"></i>
+						<!-- Vision Preview -->
+						<div class="bg-gradient-to-r from-pink-100 to-pink-200 rounded-2xl p-6">
+							<div class="flex items-center gap-3 mb-4">
+								<div class="w-12 h-12 rounded-full bg-pink-300 flex items-center justify-center">
+									<i class="bx bx-planet text-white text-xl"></i>
+								</div>
+								<h3 class="text-xl font-bold text-pink-700">Our Vision</h3>
 							</div>
-							<h3 class="text-xl font-bold text-pink-700 mb-2">Community Focus</h3>
-							<p class="text-gray-600">Building strong networks that support sustainable change.</p>
+							<p class="text-gray-700 mb-4">
+								A world where every individual thrives, communities support each other, and compassion guides our
+								collective actions.
+							</p>
+							<button @click="scrollToSection('vision')"
+							        class="text-pink-700 font-medium hover:text-pink-800 transition-colors">
+								Discover our vision →
+							</button>
 						</div>
+					</div>
 
-						<div class="text-center p-6">
-							<div class="w-16 h-16 rounded-full bg-pink-300 flex items-center justify-center mx-auto mb-4">
-								<i class="bx bx-leaf text-white text-2xl"></i>
+					<!-- Our Core Values -->
+					<div>
+						<h3 class="text-2xl font-bold text-pink-700 mb-6 text-center">Our Core Values</h3>
+						<div class="grid md:grid-cols-3 gap-8">
+							<div class="text-center p-6">
+								<div class="w-16 h-16 rounded-full bg-pink-100 flex items-center justify-center mx-auto mb-4">
+									<i class="bx bx-heart text-pink-600 text-2xl"></i>
+								</div>
+								<h3 class="text-xl font-bold text-pink-700 mb-2">Compassionate Action</h3>
+								<p class="text-gray-600">Leading with empathy in all our initiatives and interactions.</p>
 							</div>
-							<h3 class="text-xl font-bold text-pink-700 mb-2">Sustainable Impact</h3>
-							<p class="text-gray-600">Creating solutions that last for generations to come.</p>
+
+							<div class="text-center p-6">
+								<div class="w-16 h-16 rounded-full bg-pink-200 flex items-center justify-center mx-auto mb-4">
+									<i class="bx bx-group text-pink-700 text-2xl"></i>
+								</div>
+								<h3 class="text-xl font-bold text-pink-700 mb-2">Community Focus</h3>
+								<p class="text-gray-600">Building strong networks that support sustainable change.</p>
+							</div>
+
+							<div class="text-center p-6">
+								<div class="w-16 h-16 rounded-full bg-pink-300 flex items-center justify-center mx-auto mb-4">
+									<i class="bx bx-leaf text-white text-2xl"></i>
+								</div>
+								<h3 class="text-xl font-bold text-pink-700 mb-2">Sustainable Impact</h3>
+								<p class="text-gray-600">Creating solutions that last for generations to come.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -195,9 +251,17 @@
 			<!-- Vision Section -->
 			<section id="vision" class="container mx-auto px-4 py-12">
 				<div class="bg-pink-600 text-white rounded-3xl p-8 shadow-xl">
-					<div class="flex items-center mb-8">
-						<i class="bx bx-planet text-white text-4xl mr-4"></i>
-						<h2 class="text-3xl font-bold">Our Vision</h2>
+					<div class="text-center mb-10">
+						<h2 class="text-3xl font-bold mb-4">Our Vision</h2>
+						<div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-6 py-2 rounded-full mb-6">
+							<i class="bx bx-planet"></i>
+							<span class="font-semibold">Inspired by: Small Actions, Big Changes</span>
+						</div>
+						<p class="text-white/90 text-lg text-center mb-8 max-w-3xl mx-auto">
+							Our vision of a harmonious world starts with the belief that every small action matters.
+							From individual gestures to community initiatives, we're building towards <span class="font-bold">big changes</span>
+							that create lasting impact.
+						</p>
 					</div>
 
 					<div class="mb-10">
@@ -216,7 +280,7 @@
 									<i class="bx bx-target-lock text-white text-xl mt-1 mr-3"></i>
 									<div>
 										<span class="font-semibold">Expand Youth Programs</span>
-										<p class="text-white/80 text-sm mt-1">Reach 10,000 young changemakers by 2025</p>
+										<p class="text-white/80 text-sm mt-1">Reach 10,000 young changemakers by the end of 2026</p>
 									</div>
 								</li>
 								<li class="flex items-start">
@@ -248,7 +312,7 @@
 									<span>Integrity & Transparency</span>
 								</li>
 								<li class="flex items-center">
-									<i class="bx bx-hand text-white text-xl mr-3"></i>
+									<i class="bx bxs-hand text-white text-xl mr-3"></i>
 									<span>Inclusion & Diversity</span>
 								</li>
 								<li class="flex items-center">

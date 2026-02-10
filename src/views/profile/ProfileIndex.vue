@@ -12,15 +12,6 @@
 						<i class="bx bx-arrow-back text-xl group-hover:-translate-x-1 transition-transform"></i>
 						<span class="font-medium">Back to Advocacy</span>
 					</router-link>
-
-					<!-- Home Button -->
-					<router-link
-							to="/"
-							class="flex items-center space-x-2 text-gray-600 hover:text-gray-800 transition-colors"
-					>
-						<i class="bx bx-home text-xl"></i>
-						<span class="font-medium">Home</span>
-					</router-link>
 				</div>
 			</div>
 		</header>
@@ -80,16 +71,16 @@
 							</p>
 
 							<div class="flex flex-wrap gap-3">
-								<a href="mailto:rex.aaron@example.com"
+								<a href="mailto:rexaaron12345@gmail.com"
 								   class="px-4 py-2 bg-pink-500 text-white font-medium rounded-full flex items-center gap-2 hover:bg-pink-600 transition-colors">
 									<i class="bx bx-envelope"></i>
 									Contact Me
 								</a>
-								<a href="#"
-								   class="px-4 py-2 bg-white border-2 border-pink-300 text-pink-700 font-medium rounded-full flex items-center gap-2 hover:bg-pink-50 transition-colors">
-									<i class="bx bx-download"></i>
-									Download Resume
-								</a>
+<!--								<a href="#"-->
+<!--								   class="px-4 py-2 bg-white border-2 border-pink-300 text-pink-700 font-medium rounded-full flex items-center gap-2 hover:bg-pink-50 transition-colors">-->
+<!--									<i class="bx bx-download"></i>-->
+<!--									Download Resume-->
+<!--								</a>-->
 							</div>
 						</div>
 					</div>
