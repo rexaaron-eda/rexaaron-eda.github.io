@@ -490,8 +490,6 @@ onUnmounted(() => {
 </script>
 
 <style>
-@import "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css";
-
 /* Custom animations */
 @keyframes heartbeat {
 	0% {

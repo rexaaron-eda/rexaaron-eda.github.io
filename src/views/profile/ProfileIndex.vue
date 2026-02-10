@@ -2,7 +2,7 @@
 	<div class="min-h-screen bg-gradient-to-b from-pink-50 to-purple-50">
 		<!-- Header -->
 		<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm">
-			<div class="container mx-auto px-4 py-3">
+			<div class="container mx-auto max-7xl px-4 py-3">
 				<div class="flex justify-between items-center">
 					<!-- Back to Advocacy Button -->
 					<router-link
@@ -17,7 +17,7 @@
 		</header>
 
 		<!-- Main Content -->
-		<main class="container mx-auto px-4 py-8 md:py-12">
+		<main class="container mx-auto px-4 py-12 max-w-7xl">
 			<!-- Hero Section -->
 			<section class="mb-12 md:mb-16">
 				<div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
@@ -76,11 +76,6 @@
 									<i class="bx bx-envelope"></i>
 									Contact Me
 								</a>
-<!--								<a href="#"-->
-<!--								   class="px-4 py-2 bg-white border-2 border-pink-300 text-pink-700 font-medium rounded-full flex items-center gap-2 hover:bg-pink-50 transition-colors">-->
-<!--									<i class="bx bx-download"></i>-->
-<!--									Download Resume-->
-<!--								</a>-->
 							</div>
 						</div>
 					</div>
@@ -377,7 +372,6 @@ const currentYear = computed(() => new Date().getFullYear())
 </script>
 
 <style>
-/* Custom animations */
 @keyframes bounce-slow {
 	0%, 100% {
 		transform: translateY(0);
@@ -389,14 +383,6 @@ const currentYear = computed(() => new Date().getFullYear())
 
 .animate-bounce-slow {
 	animation: bounce-slow 2s ease-in-out infinite;
-}
-
-/* Responsive adjustments */
-@media (max-width: 640px) {
-	.container {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
 }
 
 /* Pink color definitions */
@@ -484,19 +470,6 @@ const currentYear = computed(() => new Date().getFullYear())
 
 .text-pink-700 {
 	color: var(--pink-700);
-}
-
-.text-pink-800 {
-	color: var(--pink-800);
-}
-
-.text-pink-900 {
-	color: var(--pink-900);
-}
-
-/* Purple colors for variety */
-.bg-purple-50 {
-	background-color: #faf5ff;
 }
 
 .bg-purple-100 {
